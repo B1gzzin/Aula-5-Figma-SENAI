@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
@@ -11,23 +12,23 @@
             <div class="instituicoes">
                 <nav>
                     <ul>
-                        <li>INÍCIO</li>
-                        <li>FIEMG</li>
-                        <li>CIEMG</li>
-                        <li>SESI</li>
-                        <li>SENAI</li>
-                        <li>IEL</li>
-                        <li>CIT</li>
+                        <li>INÍCIO <span class="bord"></span></li>
+                        <li>FIEMG <span class="bord"></span></li>
+                        <li>CIEMG <span class="bord"></span></li>
+                        <li>SESI <span class="bord"></span></li>
+                        <li class="senai">SENAI <span class="bord"></span></li>
+                        <li>IEL <span class="bord"></span></li>
+                        <li class="ult">CIT</li>
                     </ul>
                 </nav>
             </div>
             <div class="categorias">
                 <nav>
                     <ul>
-                        <li>Institucional</li>
-                        <li>Regionais</li>
-                        <li>Associativismo</li>
-                        <li>Transparência</li>
+                        <li>Institucional <span class="bord"></span></li>
+                        <li>Regionais <span class="bord"></span></li>
+                        <li>Associativismo <span class="bord"></span></li>
+                        <li>Transparência <span class="bord"></span></li>
                         <li>Fale Conosco</li>
                     </ul>
                 </nav>
@@ -44,27 +45,28 @@
                         <li>APRENDIZAGEM INDUSTRIAL</li>
                         <li>FACULDADE SENAI</li>
                         <li>INOVAÇÂO E TECNOLOGIA</li>
-                        <li>PROJETOS SENAI</li>
+                        <li class="ult">PROJETOS SENAI</li>
                     </ul>
                 </nav>
             </div>
         </section>
         <section class="pesquisa">
             <form>
-                <textarea>Digite o que você procura...</textarea>
-                <button>buscar</button>
+                <label for="pesquisa"></label>
+                <input type="text" name="pesquisa" placeholder="Digite o que você procura..."> 
+                <button>BUSCAR</button>
             </form>
         </section>
     </header>
     <main>
         <section class="slider">
             <div class="slider-img">
-                <div><img src="assets/imagem/banner1.webp" alt="banner para faculdade SENAI"></div>
-                <div><img src="assets/imagem/banner2.jpg" alt="banner para pós-graduação SENAI"></div>
+                <div class="slider-active"><img src="assets/imagem/banner1.webp" alt="banner para faculdade SENAI"></div>
+                <div class="slider-dot"><img src="assets/imagem/banner2.jpg" alt="banner para pós-graduação SENAI"></div>
             </div>
             <div class="slider-btn">
-                <div class="btn-slide"></div>
-                <div class="btn-slide"></div>
+                <div class="btn-slide-active"><span onclick="changeSlide(0)"></span></div>
+                <div class="btn-slide"><span onclick="changeSlide(1)"></span></div>
             </div>
         </section>
         <section class="efeito">
