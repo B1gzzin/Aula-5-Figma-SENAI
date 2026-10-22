@@ -70,7 +70,9 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.1);
 }
 .logo{
     img{
@@ -89,19 +91,26 @@ body{
     }
 }
 .pesquisa{
-    justify-self:center;
-    margin-top: 18px;
-    margin-bottom: 13px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 9px;
+    padding-bottom: 13px;
+    color: rgba(248, 248, 248, 0.856);
 }
 form{
-    color: rgb(151, 149, 149);
+    color: rgb(67, 67, 67);
     display: flex;
     align-items: center;
     input{
-        width: 1175px;
-        border: none;
+        height: 34px;
+        border: 1px solid lightgray;
         font-family: "Noto";
         font-size: 14px;
+        padding-left: 10px;
+        border-top-left-radius: 19px;
+        border-bottom-left-radius: 19px;
+        width: 1175px;
     }
     button{
         background-color: #164194;
@@ -126,7 +135,6 @@ form{
 .slider-dot{
     display: none;
 }
-
 .efeito{
     display: flex;
     flex-direction: column;
@@ -159,24 +167,262 @@ form{
     margin-top: 30px;
 }
 
-.card{
+.card1{
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
     background-color: rgb(80, 176, 216);
+    padding-top: 45px;
+    padding-bottom: -900px;
     border-radius: 20px;
     width: 390px;
     h3{
         display: flex;
         flex-direction: row;
         justify-content: center;
+        color: #164194;
+        font-size: 28px;
+        font-weight: 600px;
+        max-width: 50px;
+        text-align: center;
     }
 
     p{
         justify-content: center;
         text-align: center;
+        max-width: 270px;
+        color: white;
+        padding-bottom: 42px;
+        
+    }
+    img{
+
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        padding-bottom:15px ;
+        width: 54px;
+        height: 54px;
+
+    }
+    .saiba1{
+        background-color: #164194;
+        border: 2px solid #164194;
+        color: white;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 55px;
+        padding-right: 55px;
+        border-radius: 20px;
+    }
+    .saiba1:hover{
+        cursor: pointer;
+        background-color: rgb(80, 176, 216);
+    }
+}
+.card2{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(80, 176, 216);
+    padding-top: 45px;
+    padding-bottom: 27px;
+    border-radius: 20px;
+    width: 390px;
+    h3{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: #164194;
+        font-size: 28px;
+        font-weight: 600px;
+        max-width: 50px;
+        text-align: center;
     }
 
+    p{
+        justify-content: center;
+        text-align: center;
+        max-width: 270px;
+        color: white;
+    }
+    img{
 
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        padding-bottom:15px ;
+        width: 54px;
+        height: 54px;
+
+    }
+    .saiba2{
+        background-color: #164194;
+        border: 2px solid #164194;
+        color: white;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 55px;
+        padding-right: 55px;
+        border-radius: 20px;
+    }
+    .saiba2:hover{
+        cursor: pointer;
+        background-color: rgb(80, 176, 216);
+    }
+}
+
+
+.card3{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(80, 176, 216);
+    padding-top: 45px;
+    padding-bottom: 27px;
+    border-radius: 20px;
+    width: 390px;
+    h3{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: #164194;
+        font-size: 28px;
+        font-weight: 600px;
+        max-width: 50px;
+        text-align: center;
+    }
+
+    p{
+        justify-content: center;
+        text-align: center;
+        max-width: 350px;
+        color: white;
+    }
+    img{
+
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        padding-bottom:15px ;
+        width: 54px;
+        height: 54px;
+
+    }
+    .saiba3{
+        background-color: #164194;
+        border:2px solid #164194 ;
+        color: white;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 55px;
+        padding-right: 55px;
+        border-radius: 20px;
+    }
+    .saiba3:hover{
+        cursor: pointer;
+        background-color: rgb(80, 176, 216);
+    }
+}
+
+.solucoes{
 
 }
+.solu{
+    background-color: #164194;
+    h2{
+        color: white;
+        display: flex;
+        text-align: end;
+        font-size: 40px;
+        font-weight: 600;
+
+    }
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 75px;
+    column-gap:320px;
+
+    p{
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(67, 67, 67);
+    }
+}
+.solu2{
+    display: flex;
+    flex-direction: row;
+    
+}
+.text-solu{
+    background-color: rgb(96, 185, 188);
+    width: 100%;
+    .txt1-solu{
+        color: white;
+        font-size: 32px;
+        font-weight: 600;
+        display: flex;
+        max-width: 700px;
+        padding-left: 285px;
+        
+    }
+    .btn-solu{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        border: 2px solid white;
+        margin-left: 280px;
+        background-color: white;
+        color: #164194;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        width: 434px;
+        border-radius: 30px;
+        font-size: 22px;
+        font-weight: 700;
+        
+
+
+
+    }
+    .btn-solu:hover{
+        cursor: pointer;
+        background-color: rgb(96, 185, 188);
+        color: white;
+
+        
+    }
+}
+
+.img-solu{
+    display: flex;
+    justify-content: end;
+    width: 750px;
+    
+}
+
+.destaques{
+ 
+    h1{
+        color: #164194;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-left: 200px;
+        padding-right: 48px;
+        
+    }
+    .imgs-destaques{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        gap: 140px;
+        img{
+            border-radius: 25px;
+        }
+
+    }
+}
+
+
+
