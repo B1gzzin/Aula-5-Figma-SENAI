@@ -140,33 +140,29 @@ form{
     flex-direction: column;
     margin-left: 267px;
     margin-top: 55px;
-    
     h1{
         color: rgb(5, 85, 159);
-
-
     }
-    
-    
 }
 
 .atuacao{
     display: flex;
     flex-direction: column;
     margin-top: 67px;
+    background: linear-gradient(to bottom, white 70%, #05559F 30%);
     h2{
         color: rgb(5, 85, 159);
         margin-left: 267px;
     }
 }
-
 .cards{
     display: flex;
     justify-content: space-evenly;
+    margin-left: 160px;
+    margin-right: 160px;
     flex-direction: row;
     margin-top: 30px;
 }
-
 .card1{
     display: flex;
     flex-direction: column;
@@ -186,14 +182,12 @@ form{
         max-width: 50px;
         text-align: center;
     }
-
     p{
         justify-content: center;
         text-align: center;
         max-width: 270px;
         color: white;
         padding-bottom: 42px;
-        
     }
     img{
 
@@ -203,11 +197,10 @@ form{
         padding-bottom:15px ;
         width: 54px;
         height: 54px;
-
     }
     .saiba1{
-        background-color: #164194;
-        border: 2px solid #164194;
+        background-color: #05559F;
+        border: 2px solid #05559F;
         color: white;
         padding-top: 9px;
         padding-bottom: 9px;
@@ -218,10 +211,11 @@ form{
     .saiba1:hover{
         cursor: pointer;
         background-color: rgb(80, 176, 216);
+        transition: 0.5s;
     }
 }
 .card2{
-     display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(80, 176, 216);
@@ -239,7 +233,6 @@ form{
         max-width: 50px;
         text-align: center;
     }
-
     p{
         justify-content: center;
         text-align: center;
@@ -247,18 +240,16 @@ form{
         color: white;
     }
     img{
-
         display: flex;
         flex-direction: column;
         align-self: center;
         padding-bottom:15px ;
         width: 54px;
         height: 54px;
-
     }
     .saiba2{
-        background-color: #164194;
-        border: 2px solid #164194;
+        background-color: #05559F;
+        border: 2px solid #05559F;
         color: white;
         padding-top: 9px;
         padding-bottom: 9px;
@@ -269,12 +260,11 @@ form{
     .saiba2:hover{
         cursor: pointer;
         background-color: rgb(80, 176, 216);
+        transition: 0.5s;
     }
 }
-
-
 .card3{
-     display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(80, 176, 216);
@@ -292,7 +282,6 @@ form{
         max-width: 50px;
         text-align: center;
     }
-
     p{
         justify-content: center;
         text-align: center;
@@ -310,8 +299,8 @@ form{
 
     }
     .saiba3{
-        background-color: #164194;
-        border:2px solid #164194 ;
+        background-color: #05559F;
+        border:2px solid #05559F;
         color: white;
         padding-top: 9px;
         padding-bottom: 9px;
@@ -322,14 +311,12 @@ form{
     .saiba3:hover{
         cursor: pointer;
         background-color: rgb(80, 176, 216);
+        transition: 0.5s;
     }
 }
 
-.solucoes{
-
-}
 .solu{
-    background-color: #164194;
+    background-color: #05559F;
     h2{
         color: white;
         display: flex;
@@ -343,7 +330,6 @@ form{
     flex-direction: row;
     padding-top: 75px;
     column-gap:320px;
-
     p{
             font-size: 16px;
             font-weight: 400;
@@ -381,48 +367,260 @@ form{
         border-radius: 30px;
         font-size: 22px;
         font-weight: 700;
-        
-
-
-
     }
     .btn-solu:hover{
         cursor: pointer;
         background-color: rgb(96, 185, 188);
         color: white;
-
-        
+        transition: 0.5s;
     }
 }
-
 .img-solu{
     display: flex;
     justify-content: end;
     width: 750px;
-    
 }
 
 .destaques{
- 
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 60px;
     h1{
         color: #164194;
         padding-top: 17px;
         padding-bottom: 17px;
         padding-left: 200px;
-        padding-right: 48px;
-        
     }
     .imgs-destaques{
+        margin-top: 20px;
+        margin-right: 200px;
+        margin-left: 200px;
         display: flex;
         flex-direction: row;
-        justify-content:center;
-        gap: 140px;
+        justify-content: space-around;
         img{
             border-radius: 25px;
         }
-
     }
 }
 
+.noticias{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, white 65%, #50B0D8 35%);
+    h2{
+        color: white;
+        font-size: 28px;
+        margin-left: 290px;
+    }
+}
+.thumbs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+}
+.noticia{
+    max-width: 270px;
+    color: #164194;
+    img{
+        width: 250px;
+        border-radius: 10px;
+        margin-bottom: 7px;
+    }
+    figcaption{
+        font-size: 18px;
+        font-weight: 800;
+    }
+    span{
+        font-size: 16px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+}
+.btn-noticia{
+    margin-top: 20px;
+    display: flex;
+    align-self: center;
+    background-color: #50B0D8;
+    color: white;
+    font-size: 24px;
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 28px;
+    border: 2px solid #50B0D8;
+    p{
+        font-weight: 700;
+        margin: 0;
+    }
+}
+.btn-noticia:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #164194;
+    border-color: #164194;
+    transition: 0.5s;
+}
 
+.mulher{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 75px;
+    padding-top: 75px;
+    gap: 100px;
+    background: linear-gradient(to bottom, #50B0D8 86%, white 14%);
+}
+.mulher-txt{
+    color: white;
+    h2{
+        font-size: 30px;
+        max-width: 400px;
+    }
+    span{
+        display: flex;
+        justify-self: start;
+        margin-top: 50px;
+        background-color: #05559F;
+        border: 2px solid #05559F;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 20px 150px;
+        border-radius: 40px;
+    }
+    span:hover{
+        background: #50B0D8;
+        transition: 0.5s;
+    }
+}
 
+.infos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 135px;
+}
+.txt-infos{
+    max-width: 360px;
+    color: #434343;
+}
+.enviar{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    p{
+        font-size: 12px;
+    }
+    span{
+        color: #0047B6;
+    }
+    .btn-enviar{
+        font-size: 16px;
+        display: flex;
+        justify-self: center;
+        color: #283548;
+        border: 1px solid #283548;
+        padding: 7px 25px;
+        border-radius: 20px;
+    }
+    .btn-enviar:hover{
+        cursor: pointer;
+        color: white;
+        border-color: white;
+        background-color: #283548;
+        transition: 0.5s;
+    }
+    input{
+        margin-bottom: 15px;
+        font-size: 15px;
+        padding: 10px 15px;
+        border: 1px solid #707070;
+        border-radius: 40px;
+    }
+    input::placeholder{
+        color: #989898;
+    }
+}
+footer{
+    margin-top: 50px;
+    background-color: #164194;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    ul{
+        list-style: none;
+    }
+}
+.contato-infos-gerais{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    p{
+        font-size: 14px;
+        max-width: 239px;
+        margin: 0;
+    }
+    h2{
+        margin-top: 0;
+        font-weight: 500;
+    }
+    h3{
+        font-weight: 400;
+        font-size: 16px;
+        max-width: 200px;
+        padding-right: 75px;
+        border-bottom: 1px solid #989898;
+    }
+    .email{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        img{
+            height: 15px;
+            width: 20px;
+        }
+    }
+}
+.localizacao-links{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+}
+.localizao-e-img{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    img{
+        width: 200px;
+    }
+    p{
+        font-size: 14px;
+        max-width: 360px;
+    }
+}
+.links{
+    display: flex;
+    gap: 15px;
+    img{
+        align-self: center;
+        width: 30px;
+        height: 30px;
+    }
+}
+.final-pag{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    img{
+        width: 65px;
+    }
+}
