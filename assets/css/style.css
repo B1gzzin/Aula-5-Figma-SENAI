@@ -7,15 +7,14 @@ body{
     font-family: "Noto";
 }
 .cbc-azul{
-    display: flex;
     background-color: #164194;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-top: 14px;
-    .menu-az{
-        display: none;
-    }
+}
+.menu-az{
+    display: none;
 }
 .instituicoes{
     ul{
@@ -76,9 +75,9 @@ body{
     padding-top: 15px;
     padding-bottom: 10px;
     box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.1);
-    .menu-bc{
-        display: none;
-    }
+}
+.menu-bc{
+    display: none;
 }
 .logo{
     img{
@@ -99,7 +98,6 @@ body{
 .pesquisa{
     display: flex;
     justify-content: center;
-    width: 100%;
     padding-top: 9px;
     padding-bottom: 13px;
     color: rgba(248, 248, 248, 0.856);
@@ -107,16 +105,16 @@ body{
 form{
     color: rgb(67, 67, 67);
     display: flex;
-    align-items: center;
+    align-items: stretch;
     input{
         height: 34px;
+        width: 700px;
         border: 1px solid lightgray;
         font-family: "Noto";
         font-size: 14px;
         padding-left: 10px;
         border-top-left-radius: 19px;
         border-bottom-left-radius: 19px;
-        width: 1175px;
     }
     button{
         background-color: #164194;
@@ -164,8 +162,8 @@ form{
 .cards{
     display: flex;
     justify-content: space-evenly;
-    margin-left: 160px;
-    margin-right: 160px;
+    margin-left: 0px;
+    margin-right: 0px;
     flex-direction: row;
     margin-top: 30px;
 }
@@ -345,7 +343,6 @@ form{
 .solu2{
     display: flex;
     flex-direction: row;
-    
 }
 .text-solu{
     background-color: rgb(96, 185, 188);
@@ -355,16 +352,14 @@ form{
         font-size: 32px;
         font-weight: 600;
         display: flex;
-        max-width: 700px;
-        padding-left: 285px;
-        
+        max-width: 630px;
     }
     .btn-solu{
         display: flex;
         text-align: center;
+        align-self: flex-end;
         flex-direction: column;
         border: 2px solid white;
-        margin-left: 280px;
         background-color: white;
         color: #164194;
         padding-top: 17px;
@@ -391,8 +386,8 @@ form{
     display: flex;
     flex-direction: column;
     margin-top: 40px;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 0px;
+    margin-left: 0px;
     margin-bottom: 60px;
     h1{
         color: #164194;
@@ -402,8 +397,8 @@ form{
     }
     .imgs-destaques{
         margin-top: 20px;
-        margin-right: 200px;
-        margin-left: 200px;
+        margin-right: 0px;
+        margin-left: 0px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -631,11 +626,75 @@ footer{
     }
 }
 
-@media screen and (max-width 768px) {
+@media screen and (max-width:768px) {
     .categorias{
         display: none;
     }
+    .cbc-azul{
+        justify-content: space-between;
+        padding-top: 0;
+        height: 45px;
+        align-items: end;
+        padding-left: 3%;
+    }
     .menu-az{
         display: block;
+        align-self  : flex-start;
+    }
+    .instituicoes{
+        ul{
+            font-size: 10px;
+            padding: 0;
+            li{
+                padding-left: 7px;
+                padding-bottom: 13px;
+            }
+        }
+    }
+    .bord{
+        padding-right: 7px;
+        padding-bottom: 1px;
+    }
+    .cbc-branco{
+        display: flex;
+        flex-direction: column;
+        gap: 37px;
+    }
+    .menu-categ{
+        display: none;
+    }
+    .logo{
+        padding-left: 5%;
+    }
+    .menu-bc{
+        display: block;
+        padding-left: 5%;
+    }
+    form{
+        input{
+            width: 200px;
+            border-right: none;
+        }
+        button{
+            border-radius: 19px;
+            font-size: 13px;
+            font-weight: 700;
+            background-color: #004C9B;
+        }
+    }
+
+    .slider-active{
+        display: none;
+    }
+    .slider-dot{
+        display: block;
+       
+        img{
+            height: 720px;
+            width: 881px;
+
+
+
+        }
     }
 }
